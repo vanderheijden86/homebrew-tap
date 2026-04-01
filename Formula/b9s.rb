@@ -5,21 +5,21 @@
 class B9s < Formula
   desc "Fast, focused TUI viewer and editor for beads projects"
   homepage "https://github.com/vanderheijden86/beadwork"
-  version "0.4.3"
+  version "0.4.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vanderheijden86/b9s/releases/download/v0.4.3/b9s_0.4.3_darwin_amd64.tar.gz"
-      sha256 "48b5fbc8f647dce6e46223593672e40bdcab53da6c0ac9a4c7b33fbd1a4d05af"
+      url "https://github.com/vanderheijden86/b9s/releases/download/v0.4.4/b9s_0.4.4_darwin_amd64.tar.gz"
+      sha256 "98ac615474368984eb0e0aec895533db60f7052258be31a5abde9f4b23bc50e8"
 
       define_method(:install) do
         bin.install "b9s"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vanderheijden86/b9s/releases/download/v0.4.3/b9s_0.4.3_darwin_arm64.tar.gz"
-      sha256 "b65614c4c8492ed78a662296a33686d69d3a0374edea40217c463e3d49980537"
+      url "https://github.com/vanderheijden86/b9s/releases/download/v0.4.4/b9s_0.4.4_darwin_arm64.tar.gz"
+      sha256 "5e68264ebb653955acd9a20a2e6bbc3068c887db732473899c601e42a08e1fd0"
 
       define_method(:install) do
         bin.install "b9s"
@@ -29,15 +29,15 @@ class B9s < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vanderheijden86/b9s/releases/download/v0.4.3/b9s_0.4.3_linux_amd64.tar.gz"
-      sha256 "1dca0fcfe8721744716d8ebca75dbae3d16cfa3a574ac21c47238f1b9465c4c0"
+      url "https://github.com/vanderheijden86/b9s/releases/download/v0.4.4/b9s_0.4.4_linux_amd64.tar.gz"
+      sha256 "3449ce1de8227a59cf2e2bbd78c3f197d167933a7688c4b69fff5a478cf153f4"
       define_method(:install) do
         bin.install "b9s"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vanderheijden86/b9s/releases/download/v0.4.3/b9s_0.4.3_linux_arm64.tar.gz"
-      sha256 "068f312710b0771f59b2ffbb609fc353b3556cc4b4942577bb0789337f5fa440"
+      url "https://github.com/vanderheijden86/b9s/releases/download/v0.4.4/b9s_0.4.4_linux_arm64.tar.gz"
+      sha256 "e97d5fff44a83a3e80a180fde233c8689f04a1e964d5be74963a73000340c1fd"
       define_method(:install) do
         bin.install "b9s"
       end
